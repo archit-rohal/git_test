@@ -2,7 +2,8 @@ var readlinesync = require('readline-sync');
 var intro=readlinesync.question("Let's see how well do you know me. You'll score 1 for each correct answer. \n What's your name btw?\n");
 if(readlinesync.keyInYNStrict('Do you want to proceed?')) {
   
-var score=0;
+
+  var score=0;
 function play(question,answer) {
   var userAnswer=readlinesync.question(question).toLowerCase();
   if(userAnswer==answer) {
